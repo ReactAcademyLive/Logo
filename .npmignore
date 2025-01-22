@@ -1,0 +1,4 @@
+# this is empty, so npm will ignore ".gitignore" for building 
+# the dist folder during "prepare"
+# https://stackoverflow.com/questions/56011430/npm-install-from-repo-not-running-prepare
+
