@@ -26,6 +26,7 @@ export default defineConfig({
         '@react-three/fiber',
         '@react-three/drei',
         '@react-three/postprocessing',
+        'vite',
       ],
       output: {
         // Provide global variables to use in the UMD build
