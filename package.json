@@ -14,7 +14,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build && node ./scripts/copyToPublic.js",
+    "build": "tsc && vite build && node ./scripts/copyToPublic.js",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -24,8 +24,9 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
-    "@react-three/drei": "^9.121.2",
-    "@react-three/fiber": "^9.0.0-rc.4",
+    "@react-three/drei": "^10.0.0-rc.0",
+    "@react-three/fiber": "^9.0.0-rc.5",
+    "@react-three/postprocessing": "^3.0.0-rc.0",
     "@react-three/rapier": "^1.5.0",
     "@types/node": "^22.10.7",
     "@types/react": "^19.0.7",
@@ -38,28 +39,19 @@
     "three": "^0.172.0",
     "typescript": "^5.6.2",
     "typescript-eslint": "^8.18.2",
-    "vite": "^6.0.5",
-    "@react-three/postprocessing": "github:pmndrs/react-postprocessing#rc"
+    "vite": "^6.0.5"
   },
   "overrides": {
     "@react-three/drei": {
-      "react": "^19.0.0",
-      "react-dom": "^19.0.0",
-      "@react-three/fiber": "^9.0.0-rc.4"
-    },
-    "@react-three/fiber": {
-      "react": "^19.0.0",
-      "react-dom": "^19.0.0"
+      "@react-three/fiber": "^9.0.0-rc.5"
     },
     "@react-three/postprocessing": {
-      "react": "^19.0.0",
-      "react-dom": "^19.0.0",
-      "@react-three/fiber": "^9.0.0-rc.4"
+      "@react-three/fiber": "^9.0.0-rc.5"
     },
     "@react-three/rapier": {
       "react": "^19.0.0",
       "react-dom": "^19.0.0",
-      "@react-three/fiber": "^9.0.0-rc.4"
+      "@react-three/fiber": "^9.0.0-rc.5"
     }
   }
 }

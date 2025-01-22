@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react-swc';
-import exposeLogo from './src/exposeLogo';
+//import exposeLogo from './src/exposeLogo';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -8,7 +8,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), exposeLogo()],
+  plugins: [react()],
   build: {
     lib: {
       entry: resolve(__dirname, 'src/lib.tsx'),
