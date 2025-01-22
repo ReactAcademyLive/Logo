@@ -12,6 +12,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build && node ./scripts/copyToPublic.js",
+    "prepare": "npm run build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
