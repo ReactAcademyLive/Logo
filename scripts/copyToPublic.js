@@ -10,7 +10,7 @@ const srcPath = resolve(src);
 const dstPath = resolve(destPath, src);
 const logPath = resolve(os.homedir(), log);
 
-fs.appendFileSync(logPath, `Info:  ${JSON.stringify(process.env, null, 2)}\n`);
+//fs.appendFileSync(logPath, `Info:  ${JSON.stringify(process.env, null, 2)}\n`);
 
 // if (fs.existsSync(destPath)) {
 //   fs.copyFileSync(srcPath, dstPath);
