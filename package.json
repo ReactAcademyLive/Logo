@@ -21,9 +21,9 @@
     "react-dom": "^19.0.0"
   },
   "dependencies": {
-    "@react-three/drei": "^10.0.0-rc.0",
+    "@react-three/drei": "^10.0.0-rc.1",
     "@react-three/fiber": "^9.0.0-rc.5",
-    "@react-three/postprocessing": "^3.0.0-rc.0",
+    "@react-three/postprocessing": "^3.0.0-rc.2",
     "@react-three/rapier": "^1.5.0",
     "three": "^0.172.0"
   },
@@ -42,12 +42,6 @@
     "vite": "^6.0.5"
   },
   "overrides": {
-    "@react-three/drei": {
-      "@react-three/fiber": "^9.0.0-rc.5"
-    },
-    "@react-three/postprocessing": {
-      "@react-three/fiber": "^9.0.0-rc.5"
-    },
     "@react-three/rapier": {
       "react": "^19.0.0",
       "react-dom": "^19.0.0",
