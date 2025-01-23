@@ -40,6 +40,7 @@ interface GLTFResult /* extends GLTF */ {
 }
 
 export default function Logo3d() {
+  useGLTF.preload('/model.gltf');
   // ts-disable-next-line
   return (
     <Canvas camera={{ position: [0, 0, 5] }}>
@@ -74,7 +75,7 @@ function Atom(props: AtomProps) {
     0.9559733532482866
   );
 
-  const { nodes /* materials */ } = useGLTF.preload(
+  const { nodes /* materials */ } = useGLTF(
     '/model.gltf'
   ) as unknown as GLTFResult;
 
