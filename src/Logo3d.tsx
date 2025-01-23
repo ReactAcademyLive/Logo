@@ -74,7 +74,7 @@ function Atom(props: AtomProps) {
     0.9559733532482866
   );
 
-  const { nodes /* materials */ } = useGLTF(
+  const { nodes /* materials */ } = useGLTF.preload(
     '/model.gltf'
   ) as unknown as GLTFResult;
 
