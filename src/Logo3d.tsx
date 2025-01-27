@@ -41,7 +41,6 @@ interface GLTFResult /* extends GLTF */ {
 
 export default function Logo3d() {
   useGLTF.preload('/model.gltf');
-  // ts-disable-next-line
   return (
     <Canvas camera={{ position: [0, 0, 5] }}>
       {/* <color attach='background' args={['transparent']} /> */}
