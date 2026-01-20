@@ -9,6 +9,7 @@ import {
   useGLTF,
 } from '@react-three/drei';
 import { EffectComposer, Bloom } from '@react-three/postprocessing';
+import modelUrl from './assets/model.gltf?url';
 
 // start typescript workaround
 
@@ -40,7 +41,7 @@ interface GLTFResult /* extends GLTF */ {
 }
 
 export default function Logo3d() {
-  useGLTF.preload('/model.gltf');
+  useGLTF.preload(modelUrl);
   return (
     <Canvas camera={{ position: [0, 0, 5] }}>
       {/* <color attach='background' args={['transparent']} /> */}
@@ -75,7 +76,7 @@ function Atom(props: AtomProps) {
   );
 
   const { nodes /* materials */ } = useGLTF(
-    '/model.gltf'
+    modelUrl
   ) as unknown as GLTFResult;
 
   return (
