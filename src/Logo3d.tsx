@@ -44,7 +44,6 @@ export default function Logo3d() {
   useGLTF.preload(modelUrl);
   return (
     <Canvas camera={{ position: [0, 0, 5] }}>
-      {/* <color attach='background' args={['transparent']} /> */}
       <Float speed={2} rotationIntensity={1} floatIntensity={2}>
         <Atom />
       </Float>
@@ -53,7 +52,7 @@ export default function Logo3d() {
         <Bloom
           //mipmapBlur
           luminanceThreshold={1}
-          radius={0.7}
+          radius={0.3}
         />
       </EffectComposer>
     </Canvas>
