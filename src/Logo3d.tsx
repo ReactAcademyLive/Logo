@@ -69,7 +69,7 @@ function Atom(props: AtomProps) {
     []
   );
   const col = new Color().setRGB(
-    0.11697066774917994,
+    0.99697066774917994,
     0.6938717612856897,
     0.9559733532482866
   );
