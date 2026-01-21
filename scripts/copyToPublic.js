@@ -1,7 +1,7 @@
-import fs from 'node:fs';
+//import fs from 'node:fs';
 import os from 'node:os';
 import { resolve } from 'node:path';
-import process from 'node:process';
+//import process from 'node:process';
 
 const src = './model.gltf';
 const destPath = '../../public';
